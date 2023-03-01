@@ -1,0 +1,23 @@
+<div class="admin">
+  <div class="admin__box">
+    <img src="./../../assets/icon/logo-ces.png" class="admin__img" alt="">
+    <div class="admin__content">
+    <form class="admin__form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <mat-form-field class="admin__input">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Email" formControlName="email">
+      </mat-form-field>
+      <mat-form-field class="admin__input">
+        <mat-label>Contraseña</mat-label>
+        <input type="password" matInput placeholder="Contraseña" formControlName="password">
+      </mat-form-field>
+      <button class="btn" type="submit">
+        <span>Ingresar</span>
+      </button>
+    </form>
+  </div>
+    <!--><div class="forgot-label">
+     ¿Ólvido la contraseña?
+    </div><!-->
+  </div>
+</div>

@@ -1,0 +1,58 @@
+@media only screen and (max-width: 770px) {
+    .login__box {
+        width: 80% !important;
+    }
+    .appointment__box {
+        width: 100% !important;
+    }
+    .admin__box {
+        width: auto !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .login__img,
+    .appointment__img,
+    .appointment__img {
+        width: 200px !important;
+    }
+    .mat-form-field-flex {
+        width: 100% !important;
+    }
+    .inputResponsive {
+        width: 200px !important;
+    }
+
+    .mat-form-field-label {
+        font-size: 30px !important;
+    }
+    .mat-form-field-infix {
+        height: auto !important;
+    }
+    .mat-form-field-appearance-legacy .mat-form-field-label {
+        top: 35px !important;
+    }
+    .mat-stroked-button {
+        padding: 10px !important;
+        font-size: 30px !important;
+    }
+    .appointment__container {
+        flex-direction: column;
+    }
+    .appointment__calendar,
+    .appointment__table {
+        width: 100% !important;
+        border: none !important;
+    }
+    .appointment__calendar {
+        margin-bottom: 10px;
+        border-bottom: 2px solid #bbb !important;
+        margin-top: 15rem !important;
+    }
+    .appointment__table {
+        margin-top: 0 !important;
+    }
+    .admin__content {
+        width: auto !important;
+    }
+}

@@ -1,0 +1,106 @@
+$base-color-blue: #244091;
+$base-color-lighBlue: #658AD9;
+
+.admin {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    &__box {
+        width: 50%;
+        background-color: #ffffffbd;
+        padding: 3rem 1rem;
+        border-radius: 120px 30px 175px 30px;
+        margin: 0 auto;
+    }
+    &__img {
+        margin-bottom: 2rem;
+        width: 20rem;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.list {
+    margin: 20px;
+    height: 32rem;
+    &__box {
+        background-color: #ffffffbd;
+        padding: 3rem 1rem;
+        border-radius: 1rem;
+        position: relative;
+        width: 530px;
+    }
+    &__img {
+        width: 20rem;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__table {
+        border-radius: 5px;    
+        width: 100%;
+        overflow: auto;
+        height: 25rem;
+    }
+    &__item {
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: $base-color-blue;
+        text-transform: uppercase;
+    }
+    &__titleDoc {
+        color: $base-color-blue;
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    .export {
+        width: 100px;
+        height: 45px;
+        font-size: 12px;
+        position: absolute;
+        padding: 0 !important;
+        right: 35px;
+        top: 25px;
+    }
+    &__input {
+        text-align: center;
+        background: $base-color-lighBlue;
+        width: 400px;
+        margin: 0 auto;
+        padding: 5px;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+    &__btnSend {
+        text-decoration: none;
+        width: auto;
+        cursor: pointer;
+        border: transparent;
+        background-color: transparent;
+
+        img {
+            width: 35px;
+        }
+    }
+}
+header, .row {
+    display: flex;
+    border-bottom: 2px solid $base-color-blue;
+    padding: 10px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    align-items: center;
+  }
+  
+  .col {
+    flex: 1;        /* distributes space on the line equally among items */
+  }

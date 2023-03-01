@@ -1,0 +1,53 @@
+
+.login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    &__box {
+        width: 50%;
+        background-color: #ffffffbd;
+        padding: 3rem 1rem;
+        border-radius: 120px 30px 120px 30px;
+        margin: 0 auto;
+    }
+    &__img {
+        margin-bottom: 2rem;
+        width: 18rem;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__done-appointment {
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        color: #244091;
+        text-align: center;
+    }
+    &__content {
+        width: 450px;
+        margin: 0 auto;
+    }
+}
+
+.temporal{
+    margin-bottom: 2rem;
+    &__title {
+        font-weight: 500;
+        line-height: 30px;
+        font-family: 'Roboto';
+    }
+    &__phone {
+        font-weight: bold;
+        line-height: 30px;
+        font-family: 'Roboto';
+    }
+    &__doc{
+        font-weight: bold;
+        line-height: 30px;
+        font-family: 'Roboto';
+        margin-bottom: 1rem;
+    }
+}

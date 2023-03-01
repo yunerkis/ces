@@ -1,0 +1,41 @@
+$base-color-blue: #244091;
+$base-color-lighBlue: #658AD9;
+.home {
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    &__box {
+        width: 50%;
+        background-color: white;
+        padding: 3rem 1rem;
+        border-radius: 1rem;
+        margin: 0 auto;
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title {
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        color: $base-color-blue;
+    }
+    &__input {
+        text-align: center;
+        background: $base-color-lighBlue;
+        width: 400px;
+        margin: 0 auto;
+        padding: 5px;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+}
+
+.btn-upload {
+    padding: 0 2rem !important;
+    font-size: 15px;
+    margin-top: 24px;
+}

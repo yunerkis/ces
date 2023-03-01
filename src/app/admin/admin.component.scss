@@ -1,0 +1,25 @@
+.admin {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    &__box {
+        width: 50%;
+        background-color: #ffffffbd;
+        padding: 3rem 1rem;
+        border-radius: 120px 30px 75px 30px;
+        margin: 0 auto;
+    }
+    &__img {
+        margin-bottom: 2rem;
+        width: 18rem;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+    &__content {
+        width: 450px;
+        margin: 0 auto;
+    }
+}

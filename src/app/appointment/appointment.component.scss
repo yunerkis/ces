@@ -1,0 +1,96 @@
+$base-color-blue: #1d436d;
+$base-color-lighBlue: #f58c3a;
+
+.appointment {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    &__box {
+        width: 80%;
+        padding: 3rem 0;
+        border-radius: 1rem;
+        margin: 0 auto;
+    }
+    &__img {
+        margin-bottom: 2rem;
+        width: 22rem;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__calendar {
+        width: 45%;
+        margin-top: -33px;
+        border-radius: 30px;
+        background-color: #ffffffdb;
+    }
+    &__table {
+        border-radius: 30px;
+        width: 45%;
+        margin-top: -33px;
+        overflow: auto;
+        height: 35rem;
+        background-color: #ffffffdb;
+    }
+    &__label {
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        margin-top: 33px;
+        text-align: left;
+        margin-left: 1rem;
+        color: #1d436d;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem;
+        border-bottom: 1px solid#bbb;
+        padding-bottom: 10px;
+    }
+    &__name {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        width: 100%;
+        margin: 5px 0;
+    }
+    &__nameDoc {
+        width: 100%;
+        background: $base-color-blue;
+        padding: 5px;
+        border-radius: 10px;
+        color: white;
+    }
+    &__nameBtn {
+        margin-top: 10px;
+    }
+    &__time {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 17px;
+        margin: 5px 0;
+    }
+    &__done-appointment {
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 25px;
+        font-weight: 500;
+        color: #1d436d;
+        text-align: center;
+    }
+    &__date {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    &__date-time {
+        padding: 5px 0;
+    }
+}

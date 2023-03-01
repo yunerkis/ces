@@ -1,0 +1,156 @@
+$base-color-blue: #244091;
+$base-color-lighBlue: #658AD9;
+.schedule {
+    text-align: center;
+    &__box {
+        width: 80%;
+        padding: 3rem 1rem;
+        border-radius: 1rem;
+        margin: 0 auto;
+    }
+    &__img {
+        width: 20rem;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__table {
+        border-radius: 5px;    
+        width: 100%;
+        overflow: auto;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2rem 0;
+    }
+    &__item {
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__title {
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        border-bottom: 1px solid white;
+        color: white;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+
+    }
+    &__titleDoc {
+        color: $base-color-blue;
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    &__position {
+        text-align: left;
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+    }
+    &__calendar {
+        width: 45%;
+        border-radius: 30px;
+        background-color: #ffffffdb;
+    }
+    &__tablet {
+        width: 45%;
+    }
+
+    &__boxInfo {
+        border-radius: 60px 20px 60px 20px;
+        padding: 25px;
+        background-color: #ffffffdb;
+        margin-bottom: 10px;
+    }
+}
+
+header, .row {
+    display: flex;
+    border-bottom: 2px solid #bbb;
+    padding: 10px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .icon-action {
+      margin-right: 10px;
+  }
+
+  .col {
+flex: 1;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+
+    input,
+    select {
+        padding: 12px 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        background-color:$base-color-lighBlue;
+        border: none;
+        border-radius: 10px;
+        color: white;
+    }
+}
+.input-dates {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+        padding: 12px 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 5px;
+        background:$base-color-lighBlue;
+        border: none;
+        color: white;
+        font-weight: 600;
+        height: 45px;
+    }
+
+    label {
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 13px;
+        color:$base-color-lighBlue;
+
+    }
+}
+
+.time-title {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 10px;
+    margin-left: -25px;
+    background: $base-color-blue;
+    width: 140px;
+    border-radius: 0 10px 10px 0;
+    padding: 4px;
+}
+
+.m-right-10 {
+    margin-right: 10px !important;
+}
+
+.schedule__calendar{
+    .mat-calendar-controls .mat-button-wrapper {
+        font-size: 20px !important;
+    }
+}
+
+.radio-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

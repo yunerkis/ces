@@ -1,0 +1,77 @@
+$base-color-blue: #244091;
+$base-color-lighBlue: #658AD9;
+.schedule {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    &__box {
+        width: 80%;
+        background-color: #ffffffbd;
+        padding: 3rem 1rem;
+        border-radius: 1rem;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 100px 30px 100px 30px !important;
+    }
+    &__img {
+        width: 20rem;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__table {
+        border-radius: 5px;    
+        width: 100%;
+        overflow: auto;
+        height: 25rem;
+    }
+    &__item {
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: $base-color-blue;
+        text-transform: uppercase;
+    }
+    &__title {
+        font-family: Roboto, "Helvetica Neue", sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: $base-color-blue;
+        text-transform: uppercase;
+    }
+    &__position {
+        text-align: right;
+        margin-bottom: 1rem;
+        margin-right: 2rem;
+    }
+    &__btnSend {
+        text-decoration: none;
+        width: auto;
+        cursor: pointer;
+        border: transparent;
+        background-color: transparent;
+
+        img {
+            width: 35px;
+        }
+    }
+}
+
+header, .row {
+    display: flex;
+    border-bottom: 2px solid $base-color-blue;
+    padding: 10px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .icon-action {
+      margin-right: 10px;
+  }
+
+  .col {
+flex: 1;
+}
