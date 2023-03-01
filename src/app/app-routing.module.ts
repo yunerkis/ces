@@ -15,6 +15,7 @@ import { ServiceComponent } from './web-page/service/service.component';
 import { WebPageComponent } from './web-page/web-page.component';
 import { FormDoctorComponent } from './form-doctor/form-doctor.component';
 import { UploadResultComponent } from './upload-result/upload-result.component';
+import { TurnerComponent } from './turner/turner.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
@@ -32,6 +33,7 @@ const routes: Routes = [
   { path: 'duties', component: DutiesComponent },
   { path: 'create/user/doctor', component: FormDoctorComponent, canActivate: [AuthService] },
   { path: 'upload', component: UploadResultComponent, canActivate: [AuthService] },
+  { path: 'turner', component: TurnerComponent},
 ];
 
 @NgModule({
