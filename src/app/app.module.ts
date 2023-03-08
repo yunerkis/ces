@@ -25,6 +25,7 @@ import { AboutUsComponent } from './web-page/about-us/about-us.component';
 import { ServiceComponent } from './web-page/service/service.component';
 import { DutiesComponent } from './web-page/duties/duties.component';
 import { TurnerComponent } from './turner/turner.component';
+import { TurnComponent } from './turn/turn.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { TurnerComponent } from './turner/turner.component';
     DutiesComponent,
     FormDoctorComponent,
     UploadResultComponent,
-    TurnerComponent
+    TurnerComponent,
+    TurnComponent
   ],
   imports: [
     BrowserModule,

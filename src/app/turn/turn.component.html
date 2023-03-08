@@ -26,7 +26,7 @@
 <div class="list ">
   <div class="list__box">
     <div class="list__item" style="margin-bottom: 2rem;">
-      Citas asignadas
+      Turnos asignadas
       <a href="{{url}}/api/v1/sessions/exports" download>
         <button mat-stroked-button color="primary" class="btnSmall export">Descargar</button>
       </a>
@@ -36,8 +36,8 @@
       <div class="list__table">
         <section>
           <header>
+            <div class="col list__item">Turno</div>
             <div class="col list__item">Fecha</div>
-            <div class="col list__item">Doctor</div>
             <div class="col list__item">Horario</div>
             <div class="col list__item">Cédula</div>
             <div class="col list__item">Nombres y apellidos</div>
@@ -45,7 +45,7 @@
           </header>
           <div class="row" *ngFor="let session of sessionsList">
             <div class="col">{{ session.date }}</div>
-            <div class="col"><div *ngIf="session.doctor != null">{{ session.doctor.first_names }} {{ session.doctor.last_names }}</div></div>
+            <div class="col">{{ session.date }}</div>
             <div class="col">{{ session.time_start }}</div>
             <div class="col">{{session.client.dni}}</div>
             <div class="col">
