@@ -26,6 +26,7 @@ import { ServiceComponent } from './web-page/service/service.component';
 import { DutiesComponent } from './web-page/duties/duties.component';
 import { TurnerComponent } from './turner/turner.component';
 import { TurnComponent } from './turn/turn.component';
+import { ModalTurnComponent } from './modal-turn/modal-turn.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { TurnComponent } from './turn/turn.component';
     FormDoctorComponent,
     UploadResultComponent,
     TurnerComponent,
-    TurnComponent
+    TurnComponent,
+    ModalTurnComponent
   ],
   imports: [
     BrowserModule,

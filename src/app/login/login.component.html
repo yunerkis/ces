@@ -1,5 +1,5 @@
 <div class="login">
-  <div class="login__box" *ngIf="!close">
+  <div class="login__box" >
     <img src="./../../assets/icon/logo-ces.png" class="login__img" alt="">
     
     <div class="login__content">
@@ -20,12 +20,6 @@
       <div class="error-label" *ngIf="msg != ''">
         {{ msg }}
       </div>
-    </div>
-  </div>
-  <div class="login__box" *ngIf="close">
-    <img src="./../../assets/icon/logo-ces.png" class="login__img" alt="">
-    <div class="login__done-appointment">
-      El horario de apertura es de 7:00am a 5:00pm
     </div>
   </div>
 </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { ModalTurnComponent } from '../modal-turn/modal-turn.component';
 
 @Component({
   selector: 'app-turner',
@@ -6,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./turner.component.scss']
 })
 export class TurnerComponent implements OnInit {
+  
 
-  constructor() { }
+  constructor(
+    public dialog: MatDialog
+
+  ) { }
 
   ngOnInit(): void {
   }
 
+  openDialog() {
+    this.dialog.open(ModalTurnComponent, {
+      data: {
+        animal: 'panda',
+      },
+    });
+  }
 }
