@@ -1,7 +1,7 @@
 <!--Navbar-->
 <mat-toolbar>
 	<mat-icon (click)="drawer.toggle()" class="burger app-cursor">menu</mat-icon>
-	<img alt="Logo" src="./../../assets/icon/logo-ces.png" class="logo-app-list"  style="margin-left: 15px;"/>
+	<img alt="Logo" src="./../../assets/icon/logo-ces.png" class="logo-app-list"  style="margin-left: 15px;width: 15rem;"/>
 	<span class="example-spacer"></span>
 	<img src="../../../assets/icons/accountcircle_outline.svg" alt=""> <label class="admin-text app-m-name"> Administrador</label>
 	<mat-icon [matMenuTriggerFor]="menu" class=" app-cursor">keyboard_arrow_down</mat-icon>
@@ -18,7 +18,7 @@
 		<p class="user-text" routerLink="/list">Lista</p>
 		<p class="user-text" routerLink="/schedule">Horario</p>
 		<p class="user-text"routerLink="/home">Cargar Archivo</p>
-    <p class="user-text"routerLink="/create/user/doctor">Crear usuario doctor</p>
+    <p class="user-text"routerLink="/create/user/doctor">Crear usuario</p>
     <p class="user-text"routerLink="/turn">Turno</p>
 	</mat-drawer>
 </mat-drawer-container>

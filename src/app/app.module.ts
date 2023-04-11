@@ -20,10 +20,6 @@ import { HomeAdminComponent } from './home-admin/home-admin.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { ModalViewComponent } from './modal-view/modal-view.component';
 import { DoctorScheduleComponent } from './doctor-schedule/doctor-schedule.component';
-import { WebPageComponent } from './web-page/web-page.component';
-import { AboutUsComponent } from './web-page/about-us/about-us.component';
-import { ServiceComponent } from './web-page/service/service.component';
-import { DutiesComponent } from './web-page/duties/duties.component';
 import { TurnerComponent } from './turner/turner.component';
 import { TurnComponent } from './turn/turn.component';
 import { ModalTurnComponent } from './modal-turn/modal-turn.component';
@@ -41,10 +37,6 @@ import { ModalTurnComponent } from './modal-turn/modal-turn.component';
     ScheduleComponent,
     ModalViewComponent,
     DoctorScheduleComponent,
-    WebPageComponent,
-    AboutUsComponent,
-    ServiceComponent,
-    DutiesComponent,
     FormDoctorComponent,
     UploadResultComponent,
     TurnerComponent,

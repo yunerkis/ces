@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ClientService } from '../services/client.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -18,6 +19,7 @@ export class LoginComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     private clientService: ClientService,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
@@ -36,6 +38,17 @@ export class LoginComponent implements OnInit {
       return;
     }
     this.clientService.getSessionsClient(this.dniForm.value, this.time);
+    this.clientService.msg.subscribe(
+      res => {this.msg = res;}
+    );
+  }
+
+  turner() {
+    if(this.dniForm.invalid) {
+      return;
+    }
+    
+    this.clientService.getClientTurner(this.dniForm.value);
     this.clientService.msg.subscribe(
       res => {this.msg = res;}
     );

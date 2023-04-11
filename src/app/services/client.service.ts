@@ -12,6 +12,7 @@ export class ClientService {
 
   url = environment.url;
   client = new BehaviorSubject({});
+  clientTurner = new BehaviorSubject({});
   msg = new BehaviorSubject('');
   modal = new BehaviorSubject({});
   viewModal = new BehaviorSubject({});
@@ -38,6 +39,24 @@ export class ClientService {
             'session': res['data'].sessions
           });
           this.router.navigate(['/appointment']);
+        }
+      }, data => {
+        console.log(data);
+      });
+  }
+
+  getClientTurner(dni) {
+    return this.http.get(`${this.url}/api/v1/clients/turner/${dni['dni']}`).subscribe(
+      res => {
+        if (res['data'] == null) {
+          Swal.fire(
+            'Error',
+            'Este usuario no se encuentra disponible, consultar IPS',
+            'error'
+          )
+        } else {
+          this.clientTurner.next(res['data']);
+          this.router.navigate(['/turner']);
         }
       }, data => {
         console.log(data);

@@ -3,16 +3,16 @@
     <img src="./../../assets/icon/logo-ces.png" class="login__img" alt="">
     
     <div class="login__content">
-      <form class="login__form" [formGroup]="dniForm" (ngSubmit)="onSubmit()">
+      <form class="login__form" [formGroup]="dniForm">
         <mat-form-field class="">
           <input matInput placeholder="Cédula" formControlName="dni">
         </mat-form-field>
 
         <div class="inputResponsive">
-          <button class="btn" type="submit" style="margin-right: 10px;">
+          <button class="btn" type="submit" (click)="onSubmit()" style="margin-right: 10px;">
             <span>Agendar</span>
           </button>
-          <button class="btn" type="submit" routerLink="/turner">
+          <button class="btn" type="" (click)="turner()">
             <span>Turno</span>
           </button>
         </div>

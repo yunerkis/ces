@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ClientService } from '../services/client.service';
 
 @Component({
   selector: 'app-modal-turn',
@@ -7,12 +7,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./modal-turn.component.scss']
 })
 export class ModalTurnComponent implements OnInit {
+  
+  clientTurner: any = [];
 
   constructor(
-    private router: Router,
+    private clientService: ClientService,
+
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+
+    this.clientService.clientTurner.subscribe(res => {
+      this.clientTurner = res;
+    });
   }
 
 }

@@ -9,10 +9,6 @@ import { LoginComponent } from './login/login.component';
 import { RecoveryComponent } from './recovery/recovery.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { AuthService } from './services/auth.service';
-import { AboutUsComponent } from './web-page/about-us/about-us.component';
-import { DutiesComponent } from './web-page/duties/duties.component';
-import { ServiceComponent } from './web-page/service/service.component';
-import { WebPageComponent } from './web-page/web-page.component';
 import { FormDoctorComponent } from './form-doctor/form-doctor.component';
 import { UploadResultComponent } from './upload-result/upload-result.component';
 import { TurnerComponent } from './turner/turner.component';
@@ -28,10 +24,6 @@ const routes: Routes = [
   { path: 'schedule', component: ScheduleComponent, canActivate: [AuthService] },
   { path: 'doctor-schedule', component: DoctorScheduleComponent, canActivate: [AuthService] },
   { path: 'doctor-schedule/:id', component: DoctorScheduleComponent, canActivate: [AuthService] },
-  { path: 'web-page', component: WebPageComponent },
-  { path: 'about-us', component: AboutUsComponent },
-  { path: 'service', component: ServiceComponent },
-  { path: 'duties', component: DutiesComponent },
   { path: 'create/user/doctor', component: FormDoctorComponent, canActivate: [AuthService] },
   { path: 'upload', component: UploadResultComponent, canActivate: [AuthService] },
   { path: 'turner', component: TurnerComponent},
